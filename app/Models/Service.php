@@ -5,11 +5,13 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Gallery extends Model
+class Service extends Model
 {
     use HasFactory;
 
     protected $fillable = [
-        'art',
+        '2d_animation',
+        '3d_animation',
+        'explainer_video',
     ];
 }

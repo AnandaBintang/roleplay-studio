@@ -13,8 +13,7 @@
 
     <link rel="stylesheet" href="{{ url('build/assets/app-f9b4bf8d.css') }}">
     <link rel="stylesheet" href="{{ url('build/assets/app-73168167.css') }}">
-    <link rel="stylesheet" href="{{ url('build/assets/custom-b9110d39.css') }}">
-    {{-- @vite(['resources/css/app.css', 'resources/css/custom.css', 'resources/js/app.js', 'resources/js/animate.js']) --}}
+    <link rel="stylesheet" href="{{ url('build/assets/custom-1cc2161c.css') }}">
 </head>
 
 <body class="antialiased">
@@ -46,7 +45,7 @@
     <nav class="nav">
         <div class="nav-wrapper">
             <a href="#">Home</a>
-            <a href="#gallery">Gallery</a>
+            <a href="#service">Services</a>
             <a href="#contact">How to order</a>
         </div>
     </nav>
@@ -91,16 +90,7 @@
         <div class="flex flex-col items-center w-full h-full p-8">
             <h2 class="text-white text-xl md:text-2xl 2xl:text-4xl font-extrabold capitalize">Company Profile</h2>
             <h1 class="text-transparent text-5xl md:text-6xl 2xl:text-8xl font-black capitalize">OURSERVICE</h1>
-            @php
-                $serviceList = [
-                    ['name' => '2D_Animation', 'thumbnail' => 'dummy.png', 'video' => 'video.mp4'],
-                    ['name' => '3D_Animation', 'thumbnail' => 'dummy.png', 'video' => 'video.mp4'],
-                    ['name' => 'Explainer_Video', 'thumbnail' => 'dummy.png', 'video' => 'video.mp4'],
-                    ['name' => 'VFX_Video', 'thumbnail' => 'dummy.png', 'video' => 'video.mp4'],
-                    // Tambahkan
-                ];
-            @endphp
-            <x-service :services="$serviceList" />
+            <x-service :services="$service[0]" />
         </div>
     </section>
 
@@ -108,13 +98,6 @@
         <div class="flex flex-col items-center w-full h-full p-12">
             <h1 class="text-white text-4xl md:text-6xl 2xl:text-8xl font-black capitalize relative my-6">OUR CLIENT</h1>
             <x-client :clients="$client" />
-        </div>
-    </section>
-
-    <section id="gallery" class="flex items-center">
-        <div class="flex flex-col items-center w-full h-full py-12">
-            <h1 class="text-white text-xl bg-neutral-800 rounded-md p-3">Gallery</h1>
-            <x-gallery :galleries="$gallery" />
         </div>
     </section>
 
@@ -158,7 +141,7 @@
         </div>
     </section>
 
-    <script type="module" src="{{ url('build/assets/app-b553d3c9.js') }}"></script>
+    <script type="module" src="{{ url('build/assets/app-8cc4be36.js') }}"></script>
     <script src="{{ url('build/assets/animate-34db8aef.js') }}"></script>
 </body>
 

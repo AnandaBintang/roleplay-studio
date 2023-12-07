@@ -13,7 +13,6 @@
     <link href="https://fonts.bunny.net/css?family=figtree:400,500,600&display=swap" rel="stylesheet" />
 
     <link rel="stylesheet" href="{{ url('build/assets/app-f9b4bf8d.css') }}">
-    {{-- @vite(['resources/css/app.css', 'resources/js/app.js', 'resources/js/ckeditor.js']) --}}
 </head>
 
 <body class="font-sans antialiased">
@@ -35,7 +34,7 @@
         </main>
     </div>
 
-    <script type="module" src="{{ url('build/assets/app-b553d3c9.js') }}"></script>
+    <script type="module" src="{{ url('build/assets/app-8cc4be36.js') }}"></script>
     <script type="module" src="{{ url('build/assets/ckeditor-e86f9aa8.js') }}"></script>
 </body>
 

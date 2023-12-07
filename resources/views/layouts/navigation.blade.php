@@ -36,12 +36,6 @@
                 </div>
 
                 <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
-                    <x-nav-link :href="route('gallery')" :active="request()->routeIs('gallery')">
-                        {{ __('Gallery') }}
-                    </x-nav-link>
-                </div>
-
-                <div class="hidden space-x-8 sm:-my-px sm:ml-10 sm:flex">
                     <x-nav-link :href="route('social-media')" :active="request()->routeIs('social-media')">
                         {{ __('Social Media') }}
                     </x-nav-link>
@@ -125,10 +119,6 @@
 
             <x-responsive-nav-link :href="route('client')" :active="request()->routeIs('client')">
                 {{ __('Clients') }}
-            </x-responsive-nav-link>
-
-            <x-responsive-nav-link :href="route('gallery')" :active="request()->routeIs('gallery')">
-                {{ __('Gallery') }}
             </x-responsive-nav-link>
 
             <x-responsive-nav-link :href="route('social-media')" :active="request()->routeIs('social-media')">

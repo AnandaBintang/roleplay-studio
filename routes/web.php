@@ -3,7 +3,7 @@
 use App\Http\Controllers\BaseController;
 use App\Http\Controllers\ClientController;
 use App\Http\Controllers\DetailController;
-use App\Http\Controllers\GalleryController;
+use App\Http\Controllers\ServiceController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\SocialMediaController;
 use App\Http\Controllers\UserController;
@@ -54,13 +54,15 @@ Route::middleware('auth')->group(function () {
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/client', [ClientController::class, 'edit'])->name('client');
-    Route::patch('/client', [ClientController::class, 'update'])->name('client.update');
+    Route::get('/service', [ServiceController::class, 'edit'])->name('service');
+    Route::patch('/service/2d-animation', [ServiceController::class, 'updateAnimation2D'])->name('service.update.2dAnimation');
+    Route::patch('/service/3d-animation', [ServiceController::class, 'updateAnimation3D'])->name('service.update.3dAnimation');
+    Route::patch('/service/explainer-video', [ServiceController::class, 'updateExplainerVideo'])->name('service.update.explainerVideo');
 });
 
 Route::middleware('auth')->group(function () {
-    Route::get('/gallery', [GalleryController::class, 'edit'])->name('gallery');
-    Route::patch('/gallery/{gallery}', [GalleryController::class, 'update'])->name('gallery.update');
+    Route::get('/client', [ClientController::class, 'edit'])->name('client');
+    Route::patch('/client', [ClientController::class, 'update'])->name('client.update');
 });
 
 Route::middleware('auth')->group(function () {

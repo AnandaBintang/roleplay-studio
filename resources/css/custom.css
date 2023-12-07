@@ -231,7 +231,7 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    z-index: 99;
+    z-index: 98;
 }
 .nav-wrapper {
     display: flex;
@@ -379,13 +379,6 @@
 }
 #client .client {
     background-color: #fff;
-}
-
-#gallery {
-    min-height: 80vh;
-    background-image: url("../../public/image/gallery-background.png");
-    background-size: cover;
-    background-position: center;
 }
 
 #contact {
